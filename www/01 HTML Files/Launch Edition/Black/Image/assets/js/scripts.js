@@ -83,7 +83,7 @@ $(document).ready( function(){
  *****************************************************/
 $(document).ready( function(){
 	
-	$.backstretch('assets/img/1.jpg');
+	$.backstretch('assets/img/111.jpg');
 
 });
 
@@ -93,7 +93,7 @@ $(document).ready( function(){
 	function callCanvas (canvas) {
 		
 		// SETTINGS
-		var screenpointSplitt = 12000 
+		var screenpointSplitt = 3000
 		var movingSpeed = 0.1 
 		
 		var viewportWidth = $(window).width();
@@ -110,11 +110,11 @@ $(document).ready( function(){
 		_this.config = {
 			
 			star: {
-				color: 'rgba(255, 255, 255, .8)'
+				color: 'rgba(100, 100, 100, .8)'
 			},
 			
 			line: {
-				color: 'rgba(255, 255, 255, .8)',
+				color: 'rgba(100, 100, 100, .8)',
 				width: 0.1
 			},
 			
