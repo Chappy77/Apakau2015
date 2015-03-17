@@ -2,14 +2,16 @@
 <html lang="en">
 
   <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+          <meta name="apple-mobile-web-app-capable" content="yes">
+	      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
           <meta charset="utf-8">
           
           <!-- FAVICON -->
           <link rel="shortcut icon" href="assets/favicon.ico">
           
           <!-- PAGE TITLE -->
-          <title>Apakau, Inc</title>
+          <title>Gravity || Coming Soon</title>
           
           <!-- GOOGLE FONTS -->
           <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500|Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
@@ -17,16 +19,24 @@
           <!-- STYLESHEETS -->
           <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
           <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-          <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+          <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
           <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
               
   </head>
-  <body>
+  <body class="extended">
   
       <!-- BACKGROUND -->
       <div id="bg-pattern"></div>
       <div id="bg-darker"></div>
+      <div id="bg-image"></div>
       <!-- /BACKGROUND -->
+      
+      <!-- YOUTUBE BACKGROUND -->
+      <a id="bgndVideo" class="player showOn-video-bg" data-property="{videoURL:'http://youtu.be/FR9sNb48slQ',containment:'#bg-video',autoPlay:true, mute:false, startAt:6, opacity:1}"></a>
+      <i class="volume-button fa fa-volume-up showOn-video-bg"></i>
+      <i class="stop-button fa fa-pause showOn-video-bg"></i>
+      <div id="bg-video" class="showOn-video-bg"></div>
+      <!-- /YOUTUBE BACKGROUND -->
       
       
       <!-- PRELOADER -->
@@ -40,13 +50,14 @@
         
       <!-- FRONT CONTENT -->
       <div id="front-page">
-        
+      
+          <div id="canvas-container">
+              <canvas id="gravity" class="layer" data-depth="0.50"></canvas> 
+          </div>
+              
           <!-- HOME SCREEN -->
-          <div id="home-screen">
-          
-              <div id="canvas-container">
-                  <canvas id="gravity"></canvas> 
-              </div>
+          <div id="home-screen" class="layer" data-depth="0.05">
+
               
               <!-- CONTENT BLOCK -->
               <div class="content-block animated">
@@ -54,29 +65,22 @@
                   <div class="container animated">
                   
                     <img class="logo" src="assets/img/Apakaulogo_green4.png">
-
-                    <div class="slider">
                     
-<<<<<<< HEAD
-                       <div class="slide"> <h1>10X FASTER <br>MOBILE & API PERFORMANCE </h1> </div>
-                     
-                       <div class="slide"> <h1>A DATA DELIVERY NETWORK™ <br>IS COMPLEMENTARY TO <br>CONTENT DELIVERY NETWORKS</h1> </div>
-                       
-                       <div class="slide"> <h1>ONE DNS SETTING CHANGE <br>& <br>YOU'RE ON YOUR WAY </h1> </div>
-=======
-                       <div class="slide"> <h1>10X FASTER & RELIABLE<br>MOBILE & API PERFORMANCE<br> .</h1> </div>
-                     
-                       <div class="slide"> <h1>DATA DELIVERY NETWORKS <br>CDNS<br>WORK WELL TOGETHER.</h1> </div>
-                       
-                       <div class="slide"> <h1>TRANSPARENT EASY<br> ONE DNS CHANGE AND YOU'RE ON YOUR WAY <br> .</h1> </div>
->>>>>>> origin/master
+                    <div class="slider">
+                        <div class="slide"> <h1>10X FASTER <br>MOBILE & API PERFORMANCE </h1> </div>
+
+                        <div class="slide"> <h1>A DATA DELIVERY NETWORK™ <br>IS COMPLEMENTARY TO <br>CONTENT DELIVERY NETWORKS</h1> </div>
+
+                        <div class="slide"> <h1>ONE DNS SETTING CHANGE <br>& <br>YOU'RE ON YOUR WAY </h1> </div>
+
+
                      
                     </div>
       
-                    <!-- <p>OUR WEBSITE IS COMING SOON</p> -->
+
                     
                     <!-- OPEN OVERLAY -->
-                    <div class="arrow-wrap"> <div class="open-overlay"> <i class="fa fa-angle-down"></i> </div> </div>
+                    <div class="arrow-wrap"> <div class="open-overlay"> <i class="fa fa-bars"></i> </div> </div>
                     <!-- /OPEN OVERLAY -->
                     
                   </div>
@@ -105,7 +109,7 @@
       
                   <div class="container animated">
         
-                      <h1><br>OUR SOLUTIONS</h1>
+                      <h1>OUR SOLUTIONS</h1>
                       <p>
                           <b>Apakau  provides a patent-pending geo-distributed application Data Delivery Network™
                               (DDN)  helping enterprises realize faster performance for their mobile application and
@@ -117,15 +121,16 @@
                               faster response times and for DDoS mitigation by locking out direct access to
                               the origin data center. </b></p><br>
 
-                              <h1>Our Products</h1>
-                             <p><b> APAKAU DATABAHN™:  The DataBahn speeds up API requests through optimized routing,
-                                 packet resizing, traffic reshaping and early SSL termination.<br><br>
+                      <h1>Our Products</h1>
+                      <p><b> APAKAU DATABAHN™:  The DataBahn speeds up API requests through optimized routing,
+                          packet resizing, traffic reshaping and early SSL termination.<br><br>
 
-                              APAKAU APP HYPECACHE™:  The App HyperCache speeds up API requests by promoting
-                              transactions most important to the company, and in handling dirty data problems
-                              and related entities.</b></p> <BR>
+                          APAKAU APP HYPECACHE™:  The App HyperCache speeds up API requests by promoting
+                          transactions most important to the company, and in handling dirty data problems
+                          and related entities.</b></p> <BR>
                       </p>
-                      
+
+
                       <div class="status-message"></div>
                       
                       <form action="assets/subscribe.php" method="post" class="subscribe-form">
@@ -145,11 +150,14 @@
                         
                       </form>
                       
-                      <ul class="social-icons">
+                      <!--<ul class="social-icons">
                       
+                        <li><a data-placement="bottom" title="Facebook" class="fa fa-facebook" href="#"></a></li>
+                        <li><a data-placement="bottom" title="Twitter" class="fa fa-twitter" href="#"></a></li>
+                        <li><a data-placement="bottom" title="Google+" class="fa fa-google-plus" href="#" ></a></li>
                         <li><a data-placement="bottom" title="Contact" class="fa fa-envelope open-contact" href="#"></a></li>
                         
-                      </ul>
+                      </ul>-->
         
                   </div>
                
@@ -180,7 +188,7 @@
                 <div class="container">
                 
                     <h1>Contact Us</h1>
-                    
+
                     <p>
                         10x faster enterprise mobile applications and APIs, with a single DNS setting change.
                     </p>
@@ -233,6 +241,7 @@
       <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
       <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="assets/js/jquery.cycle.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.parallax.min.js"></script>
       <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
       <script type="text/javascript" src="assets/js/scripts.js"></script>
 
