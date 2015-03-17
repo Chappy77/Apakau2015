@@ -91,11 +91,7 @@ $(document).ready( function(){
  *****************************************************/
 $(document).ready( function(){
 	
-<<<<<<< HEAD
-	$('#bg-image').backstretch('assets/img/1.jpg');
-=======
-	$.backstretch('assets/img/111.jpg');
->>>>>>> origin/master
+	$('#bg-image').backstretch('assets/img/1.png');
 
 });
 
@@ -105,11 +101,7 @@ $(document).ready( function(){
 	function callCanvas (canvas) {
 		
 		// SETTINGS
-<<<<<<< HEAD
-		var screenpointSplitt = 10000 
-=======
-		var screenpointSplitt = 3000
->>>>>>> origin/master
+		var screenpointSplitt = 5000
 		var movingSpeed = 0.1 
 		
 		var viewportWidth = $(window).width();
@@ -126,19 +118,11 @@ $(document).ready( function(){
 		_this.config = {
 			
 			star: {
-<<<<<<< HEAD
 				color: 'rgba(255, 255, 255, 1)'
 			},
 			
 			line: {
 				color: 'rgba(255, 255, 255, 1)',
-=======
-				color: 'rgba(100, 100, 100, .8)'
-			},
-			
-			line: {
-				color: 'rgba(100, 100, 100, .8)',
->>>>>>> origin/master
 				width: 0.1
 			},
 			
