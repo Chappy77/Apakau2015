@@ -40,7 +40,7 @@ body
     overflow: hidden !important;
 
     color: #000;
-    background: #FFFFFF;
+    background: #222;
 
     -webkit-font-smoothing: antialiased;
 }
@@ -105,8 +105,8 @@ a:focus
 {
     cursor: pointer;
     -webkit-transition: all .3s ease 0s;
-       -moz-transition: all .3s ease 0s;
-            transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
     text-decoration: none;
 }
 
@@ -157,7 +157,7 @@ a:focus
 .socket img
 {
     -webkit-animation: rotate .6s linear infinite;
-            animation: rotate .6s linear infinite;
+    animation: rotate .6s linear infinite;
 }
 @keyframes rotate
 {
@@ -187,9 +187,8 @@ a:focus
 
 
 
-/** 3. MISC - background image opacity
+/** 3. MISC
 *****************************************************************/
-/**background image opacity ******/
 #bg-darker
 {
     position: fixed;
@@ -199,7 +198,7 @@ a:focus
     bottom: 0;
     left: 0;
 
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .5);
 }
 
 #bg-pattern,
@@ -212,7 +211,7 @@ a:focus
     bottom: 0;
     left: 0;
 
-    background: url('../img/pattern/pattern-bg.png') repeat fixed !important;
+    background: url('../img/pattern/pattern-bg-plain.png') repeat fixed !important;
 }
 
 #bg-image
@@ -314,8 +313,8 @@ canvas
     width: 100%;
 
     -webkit-transform: translateY(-50%);
-       -moz-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
     text-align: center;
     text-transform: uppercase;
 }
@@ -326,7 +325,7 @@ canvas
     margin-bottom: 20px;
     padding-top: 20px;
 
-    opacity: 1;
+    opacity: 0;
 }
 
 #home-screen .content-block .slide
@@ -338,7 +337,7 @@ canvas
 
     opacity: 0;
 }
-/** home h1 */
+
 #home-screen .content-block h1
 {
     font-size: 35px;
@@ -350,7 +349,7 @@ canvas
 
     text-align: center;
 
-    opacity: 1;
+    opacity: 0;
     color: #fff;
 }
 
@@ -370,7 +369,7 @@ canvas
 
     letter-spacing: 2px;
 
-    opacity: 1;
+    opacity: 0;
     color: #fff;
 }
 
@@ -390,8 +389,8 @@ canvas
 
     cursor: inherit;
     -webkit-transition: all .6s ease 0s;
-       -moz-transition: all .6s ease 0s;
-            transition: all .6s ease 0s;
+    -moz-transition: all .6s ease 0s;
+    transition: all .6s ease 0s;
 
     color: inherit;
     background: rgba(255,255,255,.0);
@@ -405,8 +404,8 @@ div.open-overlay
 
     cursor: pointer;
     -webkit-transition: all .6s ease 0s;
-       -moz-transition: all .6s ease 0s;
-            transition: all .6s ease 0s;
+    -moz-transition: all .6s ease 0s;
+    transition: all .6s ease 0s;
     text-align: center;
 
     color: #fff;
@@ -431,11 +430,11 @@ div.open-overlay:hover
     min-height: 100%;
 
     -webkit-transition: all .7s ease-in-out 0s;
-       -moz-transition: all .7s ease-in-out 0s;
-            transition: all .7s ease-in-out 0s;
+    -moz-transition: all .7s ease-in-out 0s;
+    transition: all .7s ease-in-out 0s;
 
-    background: rgba(0, 0, 0, 0);
-	z-index: 10;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10;
 }
 
 .overlay-container
@@ -453,12 +452,12 @@ div.open-overlay:hover
 
 .overlay.showOverlay
 {
-	top: 0;
+    top: 0;
 }
 
 .overlay.hideOverlay
 {
-	top: 100%;
+    top: 100%;
 }
 
 .close-overlay
@@ -481,7 +480,7 @@ div.open-overlay:hover
     text-align: center;
 
     color: rgb(246, 246, 246);
-    background: rgba(255,255,255,0);
+    background: rgba(255,255,255,1);
 }
 
 .close-overlay img
@@ -505,10 +504,10 @@ div.open-overlay:hover
     margin: 0 auto;
 
     -webkit-transform: translateY(-50%);
-       -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-         -o-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
     text-align: center;
 }
 
@@ -516,15 +515,13 @@ div.open-overlay:hover
 {
     text-align: center;
 }
-/** page 2 h1 */
+
 .overlay-content .container h1
 {
     font-family: 'Raleway', sans-serif;
-
     font-size: 30px;
     font-weight: 600;
     line-height: auto;
-
     margin-bottom: 30px;
 
     text-transform: uppercase;
@@ -585,8 +582,8 @@ div.open-overlay:hover
     font-weight: 300;
 
     -webkit-transition: all .3s ease 0s;
-       -moz-transition: all .3s ease 0s;
-            transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
     letter-spacing: 1.5px;
 
     border: none;
@@ -638,8 +635,8 @@ div.open-overlay:hover
     padding: 10px 18px;
 
     -webkit-transition: all .3s ease 0s;
-       -moz-transition: all .3s ease 0s;
-            transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
     letter-spacing: 2px;
     text-transform: uppercase;
 
@@ -727,7 +724,7 @@ div.open-overlay:hover
 .overlay-contact
 {
     position: fixed !important;
-	top: 100%;
+    top: 100%;
     z-index: 20;
 
     width: 100%;
@@ -735,14 +732,14 @@ div.open-overlay:hover
     min-height: 100% !important;
 
     -webkit-transition: all .7s ease-in-out 0s;
-       -moz-transition: all .7s ease-in-out 0s;
-            transition: all .7s ease-in-out 0s;
+    -moz-transition: all .7s ease-in-out 0s;
+    transition: all .7s ease-in-out 0s;
 
 }
 
 .overlay-contact.showOverlay
 {
-	top: 0;
+    top: 0;
 }
 
 .overlay-contact.hideOverlay
@@ -784,7 +781,6 @@ div.open-overlay:hover
 
 /** 8. OVERLAY-CONTACT-CONTENT
 *****************************************************************/
-/** page 3 **/
 .overlay-contact-content
 {
     position: absolute;
@@ -796,10 +792,10 @@ div.open-overlay:hover
     margin: 0 auto;
 
     -webkit-transform: translateY(-50%);
-       -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-         -o-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
     text-align: center;
 }
 
@@ -809,7 +805,6 @@ div.open-overlay:hover
     font-size: 30px;
     font-weight: 600;
     line-height: auto;
-
     margin-bottom: 30px;
 
     text-align: center;
@@ -884,9 +879,9 @@ div.open-overlay:hover
     padding-left: 10px;
 
     -webkit-transition: all .2s linear;
-       -moz-transition: all .2s linear;
-         -o-transition: all .2s linear;
-            transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 
     color: #d6d6d6;
     border: none;
@@ -936,8 +931,8 @@ div.open-overlay:hover
     padding: 0 10px 0 10px;
 
     -webkit-transition: all .3s ease 0s;
-       -moz-transition: all .3s ease 0s;
-            transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1163,11 +1158,11 @@ div.open-overlay:hover
 .extended .overlay
 {
     top: 0;
-	opacity: 1;
-	z-index: 0;
-	-webkit-transition: all 1s ease-in-out 0s;
-       -moz-transition: all 1s ease-in-out 0s;
-            transition: all 1s ease-in-out 0s;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
 }
 
 .extended .overlay.showOverlay
@@ -1177,21 +1172,21 @@ div.open-overlay:hover
     opacity: 1;
 }
 
- .extended.overlay.hideOverlay
+.extended.overlay.hideOverlay
 {
     z-index: 0;
-	top: 0;
+    top: 0;
     opacity: 0;
 }
 
 .extended .overlay-contact
 {
     top: 0;
-	opacity: 0;
-	z-index: 0;
-	-webkit-transition: all 1s ease-in-out 0s;
-       -moz-transition: all 1s ease-in-out 0s;
-            transition: all 1s ease-in-out 0s;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
 }
 
 .extended .overlay-contact.showOverlay
@@ -1201,16 +1196,13 @@ div.open-overlay:hover
     opacity: 1;
 }
 
- .extended .overlay-contact.hideOverlay
+.extended .overlay-contact.hideOverlay
 {
     z-index: 0;
-	top: 0;
+    top: 0;
     opacity: 0;
 }
 
-<<<<<<< HEAD
-
-=======
 /** 10. MEDIA QUERIES
  *****************************************************************/
 
@@ -1266,7 +1258,7 @@ div.open-overlay:hover
 
     #home-screen .content-block img.logo
     {
-        width: 400px;
+        width: 220px;
         margin-bottom: 8px;
     }
 
@@ -1384,7 +1376,7 @@ div.open-overlay:hover
 
     #home-screen .content-block img.logo
     {
-        width: 220px;
+        width: 190px;
         margin-bottom: 4px;
     }
 
@@ -1463,7 +1455,7 @@ div.open-overlay:hover
 
     #home-screen .content-block img.logo
     {
-        width: 220px;
+        width: 170px;
         margin-bottom: 8px;
     }
 
@@ -1516,4 +1508,3 @@ div.open-overlay:hover
         font-size: 28px;
     }
 }
->>>>>>> origin/master
