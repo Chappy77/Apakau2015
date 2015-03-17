@@ -40,7 +40,7 @@ body
     overflow: hidden !important;
 
     color: #000;
-    background: #222;
+    background: #FFFFFF;
 
     -webkit-font-smoothing: antialiased;
 }
@@ -64,7 +64,7 @@ h6
 
 h1
 {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 h2
@@ -187,8 +187,9 @@ a:focus
 
 
 
-/** 3. MISC
+/** 3. MISC - background image opacity
 *****************************************************************/
+/**background image opacity ******/
 #bg-darker
 {
     position: fixed;
@@ -198,7 +199,7 @@ a:focus
     bottom: 0;
     left: 0;
 
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .6);
 }
 
 #bg-pattern,
@@ -321,11 +322,11 @@ canvas
 
 #home-screen .content-block img.logo
 {
-    width: 260px;
+    width: 400px;
     margin-bottom: 20px;
     padding-top: 20px;
 
-    opacity: 0;
+    opacity: 1;
 }
 
 #home-screen .content-block .slide
@@ -337,10 +338,10 @@ canvas
 
     opacity: 0;
 }
-
+/** home h1 */
 #home-screen .content-block h1
 {
-    font-size: 80px;
+    font-size: 35px;
     font-weight: 600;
     line-height: auto;
 
@@ -349,7 +350,7 @@ canvas
 
     text-align: center;
 
-    opacity: 0;
+    opacity: 1;
     color: #fff;
 }
 
@@ -361,7 +362,7 @@ canvas
 #home-screen .content-block p
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 17px;
+    font-size: 40px;
     font-weight: 400;
     line-height: auto;
 
@@ -369,7 +370,7 @@ canvas
 
     letter-spacing: 2px;
 
-    opacity: 0;
+    opacity: 1;
     color: #fff;
 }
 
@@ -433,7 +434,7 @@ div.open-overlay:hover
        -moz-transition: all .7s ease-in-out 0s;
             transition: all .7s ease-in-out 0s;
 
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0);
 	z-index: 10;
 }
 
@@ -480,7 +481,7 @@ div.open-overlay:hover
     text-align: center;
 
     color: rgb(246, 246, 246);
-    background: rgba(255,255,255,1);
+    background: rgba(255,255,255,0);
 }
 
 .close-overlay img
@@ -515,23 +516,25 @@ div.open-overlay:hover
 {
     text-align: center;
 }
-
+/** page 2 h1 */
 .overlay-content .container h1
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 39px;
-    font-weight: 400;
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: auto;
 
     margin-bottom: 30px;
 
     text-transform: uppercase;
 
-    color: #fff;
+    color: #C1D833;
 }
 
 .overlay-content .container p
 {
-    font-size: 13px;
+    font-size: 15px;
 
     max-width: 600px;
     margin: 0 auto;
@@ -781,6 +784,7 @@ div.open-overlay:hover
 
 /** 8. OVERLAY-CONTACT-CONTENT
 *****************************************************************/
+/** page 3 **/
 .overlay-contact-content
 {
     position: absolute;
@@ -802,19 +806,21 @@ div.open-overlay:hover
 .overlay-contact-content h1
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 39px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: auto;
 
     margin-bottom: 30px;
 
     text-align: center;
     text-transform: uppercase;
 
-    color: #fff;
+    color: #C1D833;
 }
 
 .overlay-contact-content p
 {
-    font-size: 13px;
+    font-size: 15px;
 
     max-width: 370px;
     margin: 0 auto;
@@ -1157,7 +1163,7 @@ div.open-overlay:hover
 .extended .overlay
 {
     top: 0;
-	opacity: 0;
+	opacity: 1;
 	z-index: 0;
 	-webkit-transition: all 1s ease-in-out 0s;
        -moz-transition: all 1s ease-in-out 0s;
@@ -1202,308 +1208,4 @@ div.open-overlay:hover
     opacity: 0;
 }
 
-/** 10. MEDIA QUERIES
- *****************************************************************/
 
-@media only screen and (max-height: 800px)
-{
-    #home-screen .content-block h1
-    {
-        font-size: 60px;
-    }
-
-    #home-screen .content-block p
-    {
-        font-size: 14px;
-
-        padding-bottom: 40px;
-    }
-
-    .overlay-contact-content .container
-    {
-        margin-top: 80px;
-    }
-}
-
-@media only screen and (max-height: 630px)
-{
-    .overlay-content
-    {
-        height: 100% !important;
-    }
-
-    .overlay-contact-content
-    {
-        height: 100% !important;
-    }
-
-    #home-screen .content-block h1
-    {
-        font-size: 55px;
-
-        margin-bottom: 40px;
-    }
-
-    .open-overlay
-    {
-        font-size: 32px;
-        line-height: 70px;
-
-        width: 70px;
-        height: 70px;
-        margin-top: -70px;
-        margin-left: -35px;
-    }
-
-    #home-screen .content-block img.logo
-    {
-        width: 220px;
-        margin-bottom: 8px;
-    }
-
-    .open-overlay
-    {
-        font-size: 28px;
-        line-height: 60px;
-
-        width: 60px;
-        height: 60px;
-        margin-top: -60px;
-        margin-left: -30px;
-    }
-
-    .close-overlay
-    {
-        font-size: 22px;
-        line-height: 60px;
-
-        width: 60px;
-        height: 60px;
-        margin-left: -30px;
-    }
-
-    .close-contact
-    {
-        font-size: 22px;
-        line-height: 60px;
-
-        width: 60px;
-        height: 60px;
-        margin-left: -30px;
-    }
-
-    .close-overlay img,
-    .close-contact img
-    {
-        width: 30px;
-    }
-
-    .overlay-content .container
-    {
-        margin-top: 0;
-        padding-top: 80px;
-
-        text-align: center;
-    }
-
-    .overlay-contact-content .container
-    {
-        margin-top: 80px;
-    }
-}
-
-@media only screen and (max-height: 320px)
-{
-    .content-block
-    {
-        overflow: auto;
-
-        height: 100% !important;
-    }
-}
-
-@media only screen and (max-width: 768px), only screen and (max-height: 510px)
-{
-    .open-overlay i
-    {
-        font-size: 32px;
-        line-height: 56px;
-    }
-
-    div.open-overlay
-    {
-        width: 60px;
-        height: 60px;
-    }
-
-    #home-screen .content-block p
-    {
-        padding-bottom: 60px;
-    }
-
-    #home-screen .content-block h1
-    {
-        font-size: 45px;
-    }
-
-    .subscribe-form
-    {
-        display: inline-block;
-
-        width: auto;
-
-        background: rgba(255, 255, 255, .0);
-    }
-}
-
-@media only screen and (max-width: 480px), only screen and (max-height: 410px)
-{
-    #home-screen .content-block h1
-    {
-        font-size: 40px;
-    }
-
-    #home-screen .content-block p
-    {
-        font-size: 10px;
-        font-weight: 300;
-
-        padding-bottom: 20px;
-
-        letter-spacing: 2px;
-    }
-
-    #home-screen .content-block img.logo
-    {
-        width: 190px;
-        margin-bottom: 4px;
-    }
-
-    .overlay-content .container h1
-    {
-        font-size: 30px;
-    }
-
-    .overlay-content .container p
-    {
-        font-size: 10px;
-    }
-
-    .overlay-contact-content h1
-    {
-        font-size: 35px;
-    }
-
-    .overlay-contact-content p
-    {
-        font-size: 10px;
-    }
-
-    .open-overlay
-    {
-        font-size: 28px;
-        line-height: 60px;
-
-        width: 60px;
-        height: 60px;
-        margin-top: -60px;
-        margin-left: -30px;
-    }
-
-    .close-overlay
-    {
-        font-size: 22px;
-        line-height: 60px;
-
-        width: 60px;
-        height: 60px;
-        margin-left: -30px;
-    }
-
-
-    .close-contact
-    {
-        font-size: 22px;
-        line-height: 60px;
-
-        width: 60px;
-        height: 60px;
-        margin-left: -30px;
-    }
-
-    .close-overlay img,
-    .close-contact img
-    {
-        width: 30px;
-    }
-
-    .subscribe-form button
-    {
-        font-size: 12px !important;
-    }
-}
-
-@media only screen and (max-width: 400px), only screen and (max-height: 310px)
-{
-    #home-screen .content-block h1
-    {
-        font-size: 30px;
-
-        margin-bottom: 30px;
-    }
-
-    #home-screen .content-block img.logo
-    {
-        width: 170px;
-        margin-bottom: 8px;
-    }
-
-    .overlay-content .container h1
-    {
-        font-size: 30px;
-    }
-
-    .overlay-contact-content h1
-    {
-        font-size: 30px;
-    }
-
-    .overlay-content .container
-    {
-        margin-top: 0;
-        padding-top: 80px;
-
-        text-align: center;
-    }
-
-    .overlay-contact-content .container
-    {
-        margin-top: 80px;
-    }
-}
-
-@media only screen and (max-width: 355px) ,only screen and (max-height: 280px)
-{
-    #home-screen .content-block h1
-    {
-        font-size: 28px;
-
-        margin-bottom: 30px;
-    }
-
-    #home-screen .content-block img.logo
-    {
-        width: 150px;
-        margin-bottom: 4px;
-    }
-
-    .overlay-content .container h1
-    {
-        font-size: 28px;
-    }
-
-    .overlay-contact-content h1
-    {
-        font-size: 28px;
-    }
-}

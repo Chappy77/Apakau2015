@@ -23,6 +23,14 @@ $(window).load(function() {
 	
 	$('.socket').addClass('animated fadeOut');	
 	
+	//PARALLAX
+	$('body').parallax({
+	  scalarX: 25,
+	  scalarY: 15,
+	  frictionX: 0.1,
+	  frictionY: 0.1,
+	});
+	
 	  setTimeout(function() {
 		  $('#prelaoder').addClass('animated fadeOut').fadeOut(2000);	
 	  
@@ -83,7 +91,7 @@ $(document).ready( function(){
  *****************************************************/
 $(document).ready( function(){
 	
-	$.backstretch('assets/img/1.jpg');
+	$('#bg-image').backstretch('assets/img/1.jpg');
 
 });
 
@@ -93,7 +101,7 @@ $(document).ready( function(){
 	function callCanvas (canvas) {
 		
 		// SETTINGS
-		var screenpointSplitt = 12000 
+		var screenpointSplitt = 10000 
 		var movingSpeed = 0.1 
 		
 		var viewportWidth = $(window).width();
@@ -110,11 +118,11 @@ $(document).ready( function(){
 		_this.config = {
 			
 			star: {
-				color: 'rgba(255, 255, 255, .8)'
+				color: 'rgba(255, 255, 255, 1)'
 			},
 			
 			line: {
-				color: 'rgba(255, 255, 255, .8)',
+				color: 'rgba(255, 255, 255, 1)',
 				width: 0.1
 			},
 			
@@ -290,6 +298,18 @@ $(document).ready( function(){
 
 		}, 400, "some unique string");
 	});
+
+});
+
+$(document).ready( function(){
+	
+	// SET BACKGROUND PARALLAX
+    $('#bg-image').css('transform', 'scale(1.06)');
+    $('#bg-image .backstretch').attr('data-depth', 0.1);
+	$('#bg-image .backstretch').addClass('layer');
+	$('#wrapper_mbYTP_bgndVideo').css('transform', 'scale(1.06)');
+    $('#bg-video').attr('data-depth', 0.1);
+	$('#bg-video').addClass('layer');
 
 });
 
